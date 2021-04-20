@@ -12,8 +12,7 @@ void advice(mode)
 {
           printf("You should try add an ACL entry similar to :\n");
           printf("%s *.*.*\n", mode);
-          printf("Careful, this kind of entry will give the %s permissions to e
-\cvery users\n");
+          printf("Careful, this kind of entry will give the %s permissions to every users\n");
 }
 
 int main(argc, argv)
@@ -33,8 +32,7 @@ int main(argc, argv)
           printf("open : try to open file with given modes\n");
           printf("quit : exit the program\n");
           printf("\n");
-          printf("/!\ Be careful, if you ask to open a file using two modes\n")
-\c;
+          printf("/!\ Be careful, if you ask to open a file using two modes\n");
           printf("For example : read and write (rw)\n");
           printf("If the file authorize you one of this operation\n");
           printf("It will succeed to open the file\n");
@@ -51,8 +49,7 @@ int main(argc, argv)
 
                               filed = fopen(file, mode);
                               if (filed == NULL) {
-                                        printf("Couldn't open the requested fil
-\ce\n");
+                                        printf("Couldn't open the requested file\n");
                                         printf("Requested mode : %s\n", mode);
                                         advice(mode);
                               } else {
